@@ -1,0 +1,15 @@
+bobcount=0
+b=777
+o=777
+count=0
+
+for x in s:
+    if x=='b':
+        b=count
+        if o+1 == count:
+            bobcount+=1
+    if x=='o':
+        if b+1==count:
+            o=count
+    count+=1
+print(bobcount)

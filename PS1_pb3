@@ -1,0 +1,23 @@
+abc='abcdefghijklmnopqrstuvwxyz'
+
+longstring=''
+TheLongstring=''
+count=0
+
+
+while count<len(s):
+    for i in abc:
+        if count==len(s):
+            break
+        while i==s[count]:
+            longstring+=i
+            count+=1
+            if count==len(s):
+                break
+    if len(TheLongstring)<len(longstring):
+        TheLongstring=longstring
+        longstring=''
+    else:
+        longstring=''
+            
+print('Longest substring in alphabetical order is: '+TheLongstring)
