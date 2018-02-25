@@ -16,8 +16,7 @@ while count<len(s):
                 break
     if len(TheLongstring)<len(longstring):
         TheLongstring=longstring
-        longstring=''
-    else:
-        longstring=''
+    longstring=''
+
             
 print('Longest substring in alphabetical order is: '+TheLongstring)
